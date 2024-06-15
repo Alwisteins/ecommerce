@@ -13,7 +13,7 @@ export default function Button(props: ButtonProps) {
     <button
       className={`${
         outline ? outlineStyle : defaultStyle
-      } px-4 py-2 rounded-xl font-medium focus:outline-none focus:ring focus:ring-green-300`}
+      } sm:block px-3 py-2 sm:px-4 rounded-lg sm:rounded-xl text-sm sm:text-base font-medium focus:outline-none focus:ring focus:ring-green-300`}
       onClick={onClick}
     >
       {name}
