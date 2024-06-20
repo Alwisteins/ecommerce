@@ -5,7 +5,7 @@ interface SubmitButtonProps {
 
 export default function SubmitButton(props: SubmitButtonProps) {
   const { name, input } = props;
-  const isDisabled = !input.email || !input.password;
+  const isDisabled = !input.email || !input.password || input.password.length < 8;
   return (
     <button
       type="submit"
