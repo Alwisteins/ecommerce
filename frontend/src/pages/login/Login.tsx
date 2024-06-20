@@ -2,7 +2,7 @@ import Form from "../../components/form/Form";
 
 export default function Login() {
   return (
-    <div className="h-[87vh] sm:grid grid-cols-2 justify-items-center content-center">
+    <div className="h-screen sm:grid grid-cols-2 justify-items-center content-center">
       <Form type="Login" />
       <div className="hidden sm:flex flex-col justify-center items-center">
         <img src="/login-ilustration.png" alt="register ilustration" />

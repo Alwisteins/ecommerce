@@ -2,7 +2,7 @@ import Form from "../../components/form/Form";
 
 export default function Register() {
   return (
-    <div className="h-[87vh] sm:grid grid-cols-2 justify-items-center content-center">
+    <div className="h-screen sm:grid grid-cols-2 justify-items-center content-center">
       <div className="hidden sm:flex flex-col justify-center items-center">
         <img src="/register-ilustration.png" alt="register ilustration" />
         <h2 className="text-xl font-semibold">
