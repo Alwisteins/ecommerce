@@ -1,9 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import Button from "../button/Button";
 import Navbar from "../navbar/Navbar";
+import { useAuth } from "../../context/Auth";
 
 export default function Topbar() {
   const navigate = useNavigate();
+  const { auth } = useAuth();
 
   return (
     <header className="fixed h-20 w-full p-5 sm:p-10 flex items-center justify-between bg-white/80 backdrop-blur-md border-b border-slate-300">
@@ -13,7 +15,11 @@ export default function Topbar() {
       <div className="sm:block hidden">
         <Navbar />
       </div>
-      <div className="order-3 flex sm:order-none space-x-3">
+      <div
+        className={`${
+          auth.token && "hidden"
+        } order-3 flex sm:order-none space-x-3`}
+      >
         <Button
           name="Login"
           onClick={() => navigate("/login")}
